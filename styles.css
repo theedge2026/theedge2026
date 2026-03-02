@@ -342,9 +342,8 @@ a:hover{ color: white; }
   .nav-links{ gap: 10px; }
 }
 
-.nav-logo-img {
-    width: 32px;
-    height: 32px;
+.nav-icon {
+    width: 28px;
+    height: 28px;
     object-fit: contain;
-    margin-right: 10px;
 }
