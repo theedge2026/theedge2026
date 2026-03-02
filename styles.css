@@ -258,7 +258,7 @@ a:hover{ color: white; }
 .section p{
   color: var(--muted);
   max-width: 78ch;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .cards{
