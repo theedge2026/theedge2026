@@ -1,70 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>THE EDGE | Market Intelligence</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>THE EDGE | Market Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Premium font (this alone fixes a lot) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
 
-<nav class="navbar">
-    <div class="nav-logo">THE EDGE</div>
-    <div class="nav-links">
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-badge"></div>
+        <span>THE EDGE</span>
+      </div>
+      <div class="nav-links">
         <a href="#about">About</a>
         <a href="#features">Features</a>
         <a href="terms.html">Terms</a>
         <a href="privacy.html">Privacy</a>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<section class="hero">
-    <img src="logo.png" alt="THE EDGE Logo" class="hero-logo">
-    <h1>Market Intelligence. Real-Time.</h1>
-    <p>Cross-market analytics and price discrepancy monitoring across regulated prediction markets.</p>
-    <a href="#" class="cta-button">Join Early Access</a>
-</section>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1>Market intelligence, in real time.</h1>
+          <p>
+            Cross-market analytics and price discrepancy monitoring across regulated prediction markets.
+            Structured insights on spreads, liquidity, and fee impact — for informational and educational use.
+          </p>
 
-<section id="about" class="section">
-    <h2>What We Do</h2>
-    <p>
-        THE EDGE delivers structured, real-time analytics across multiple prediction markets.
-        We monitor price discrepancies, liquidity conditions, and fee impact to provide
-        actionable data insights for educational and informational purposes.
-    </p>
-</section>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="mailto:support@theedgeanalytics.com?subject=THE%20EDGE%20Early%20Access">
+              Join Early Access →
+            </a>
+            <a class="btn" href="#features">See features</a>
+          </div>
 
-<section id="features" class="section dark-section">
-    <h2>Platform Features</h2>
-    <div class="feature-grid">
-        <div class="feature-card">
-            <h3>Cross-Market Monitoring</h3>
-            <p>Detect structured price differences across platforms in real time.</p>
+          <div class="kpi-row">
+            <div class="kpi"><b>Real-time</b> monitoring</div>
+            <div class="kpi"><b>Liquidity</b> + fee awareness</div>
+            <div class="kpi"><b>Alerts</b> via Discord + dashboard</div>
+          </div>
         </div>
-        <div class="feature-card">
-            <h3>Liquidity Analysis</h3>
-            <p>Understand depth, slippage risk, and execution dynamics.</p>
+
+        <div class="hero-right">
+          <div class="logo-wrap">
+            <!-- keep your file named logo.png in the repo root -->
+            <img src="logo.png" alt="THE EDGE Logo" />
+          </div>
         </div>
-        <div class="feature-card">
-            <h3>Structured Alerts</h3>
-            <p>Receive clean, data-driven notifications via dashboard and Discord.</p>
-        </div>
+      </div>
     </div>
-</section>
+  </header>
 
-<section class="section">
-    <h2>Important Notice</h2>
-    <p class="disclaimer">
-        THE EDGE provides informational analytics only. We do not execute trades,
-        manage capital, or guarantee outcomes. Users are responsible for their own decisions.
-    </p>
-</section>
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>What we do</h2>
+        <p>
+          THE EDGE delivers structured, real-time analytics across multiple prediction markets.
+          We monitor price discrepancies, liquidity conditions, and fee impact to surface cross-market signals
+          and provide clear market context.
+        </p>
+      </div>
+    </section>
 
-<footer>
-    <p>© 2026 THE EDGE Analytics</p>
-    <p>support@theedgeanalytics.com</p>
-</footer>
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Platform features</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Cross-market monitoring</h3>
+            <p>Detect structured price differences across platforms with clean normalization.</p>
+          </div>
+          <div class="card">
+            <h3>Liquidity analysis</h3>
+            <p>Evaluate depth, slippage risk, and execution dynamics before acting.</p>
+          </div>
+          <div class="card">
+            <h3>Structured alerts</h3>
+            <p>Receive consistent, data-driven notifications via dashboard and Discord.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="section">
+      <div class="container notice">
+        <h2>Important notice</h2>
+        <p>
+          THE EDGE provides informational analytics only. We do not execute trades, manage capital,
+          or guarantee outcomes. Users are responsible for their own decisions.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div>© 2026 THE EDGE Analytics</div>
+        <div>
+          <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> ·
+          <a href="mailto:support@theedgeanalytics.com">support@theedgeanalytics.com</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
