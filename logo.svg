@@ -1,24 +1,26 @@
 <svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- ===== ICON ===== -->
-  <g transform="translate(250,130)">
+  <defs>
+    <!-- This mask applies ONLY to the circle icon -->
+    <mask id="slash-cut" maskUnits="userSpaceOnUse">
+      <!-- Everything visible by default -->
+      <rect x="0" y="0" width="500" height="320" fill="white"/>
+      <!-- Cutout: black removes -->
+      <polygon points="205,235 290,45 315,45 230,235" fill="black"/>
+    </mask>
+  </defs>
 
-    <!-- White circle -->
-    <circle cx="0" cy="0" r="90" fill="white"/>
+  <!-- ICON -->
+  <circle cx="250" cy="130" r="90" fill="#ffffff" mask="url(#slash-cut)"/>
 
-    <!-- Diagonal cut -->
-    <polygon points="-40,110 35,-110 60,-110 -15,110" fill="black"/>
-
-  </g>
-
-  <!-- ===== TEXT ===== -->
+  <!-- TEXT -->
   <text x="250"
         y="280"
         text-anchor="middle"
         font-family="Inter, Arial, sans-serif"
         font-size="44"
         letter-spacing="10"
-        fill="white">
+        fill="#ffffff">
     THE EDGE
   </text>
 
