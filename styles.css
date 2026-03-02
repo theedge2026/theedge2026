@@ -26,6 +26,7 @@ body{
   overflow-x:hidden;
 }
 
+
 /* subtle moving grid texture */
 .bg-grid{
   position: fixed;
@@ -339,4 +340,11 @@ a:hover{ color: white; }
   .hero-grid{ grid-template-columns: 1fr; }
   .cards{ grid-template-columns: 1fr; }
   .nav-links{ gap: 10px; }
+}
+
+.nav-logo-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 10px;
 }
